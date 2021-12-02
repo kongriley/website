@@ -2,14 +2,11 @@
   <div>
     <div class="fixed top-0 right-0 mt-8 mr-20">
       <div class="absolute topline right-0 w-32 bg-blue-600"/>
-      <div class="flex lg:flex-col align-center lg:text-right mt-6 text-2xl text-gray-500">
-        <NuxtLink to="/" class="pr-2 lg:pr-0 lg:pt-8 hover:text-black">home</NuxtLink>
-        <span class="visible lg:invisible lg:h-2">・</span>
-        <a href="https://github.com/kongriley" class="px-2 lg:px-0 hover:text-black">coding</a>
-        <span class="visible lg:invisible lg:h-2">・</span>
-        <a href="https://lingintensive.com" class="px-2 lg:px-0 hover:text-black">linguistics</a>
-        <span class="visible lg:invisible lg:h-2">・</span>
-        <a href="https://www.youtube.com/channel/UC3jYTktwIe_NmS9N2Fb-kMg" class="pl-2 lg:pl-0 hover:text-black">music</a>
+      <div class="flex flex-col align-center text-right mt-6 text-2xl text-gray-500">
+        <NuxtLink to="/" class="pr-2 pr-0 pt-8 hover:text-black">home</NuxtLink>
+        <a href="https://github.com/kongriley" class="px-2 px-0 hover:text-black">coding</a>
+        <a href="https://lingintensive.com" class="px-2 px-0 hover:text-black">linguistics</a>
+        <a href="https://www.youtube.com/channel/UC3jYTktwIe_NmS9N2Fb-kMg" class="pl-0 hover:text-black">music</a>
       </div>
       
     </div>

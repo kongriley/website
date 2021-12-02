@@ -23,7 +23,7 @@
 
     <div class="absolute top-0 left-0 invisible lg:visible">
       <!-- <div class="midbar bg-gradient-to-r from-white to-gray-400"></div> -->
-        <img class="midbar" src="/coding.png" />
+        <img class="midbar" src="/coding.jpg" />
     </div>
 
     <div class="absolute name text-5xl pl-24 z-10">
@@ -73,6 +73,7 @@ export default {
     width: 100vw;
     height: 100vh;
     clip-path: polygon(0 0, 40% 0, 50% 100%, 0 100%);
+    opacity: 0.1;
   }
   .section {
     width: 100%;
