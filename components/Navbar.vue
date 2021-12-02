@@ -2,7 +2,7 @@
   <div>
     <div class="fixed top-0 right-0 mt-8 mr-20">
       <div class="absolute topline right-0 w-32 bg-blue-600"/>
-      <div class="flex flex-col align-center text-right mt-6 text-2xl text-gray-500">
+      <div class="flex flex-col align-center text-right mt-4 text-2xl text-gray-500">
         <NuxtLink to="/" class="pr-2 pr-0 pt-8 hover:text-black">home</NuxtLink>
         <a href="https://github.com/kongriley" class="px-2 px-0 hover:text-black">coding</a>
         <a href="https://lingintensive.com" class="px-2 px-0 hover:text-black">linguistics</a>
