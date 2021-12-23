@@ -21,17 +21,15 @@
       </div> -->
     </div>
 
-    <div class="absolute top-0 left-0 invisible lg:visible">
+    <div class="invisible lg:visible">
       <!-- <div class="midbar bg-gradient-to-r from-white to-gray-400"></div> -->
-        <img class="midbar" src="/coding.jpg" />
+        <div class="absolute top-0 left-0 midbar-white" />
+        <img class="absolute top-0 left-0 midbar" src="/coding.jpg" />
     </div>
 
-    <div class="absolute name text-5xl pl-24 z-10">
-      <div class="flex flex-row text-5xl">
-        <div class="font-serif pr-4">Riley Kong</div>
-        <div class="invisible text-gray-700 fancy-chinese">江维义</div>
-      </div>
-      <div class="flex text-4xl pt-5 space-x-4">
+    <div class="absolute name lg:pl-24 z-10">
+      <div class="font-serif leading-snug text-center w-screen lg:w-auto text-5xl lg:text-6xl">Riley Kong</div>
+      <div class="flex text-4xl pt-5 justify-center lg:justify-start space-x-4">
         <a href="mailto:kongriley@gmail.com">
           <font-awesome-icon :icon="['fas', 'envelope']" />
         </a>
@@ -68,6 +66,13 @@ export default {
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+  }
+  .midbar-white {
+    width: 100vw;
+    height: 100vh;
+    clip-path: polygon(0 0, 40% 0, 50% 100%, 0 100%);
+    opacity: 1;
+    background-color: #FFFFFF;
   }
   .midbar {
     width: 100vw;
