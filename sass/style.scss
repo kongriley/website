@@ -16,16 +16,39 @@
 }
 
 @font-face {
+  font-family: 'Inter';
+  src: url('/fonts/InterVariable-Italic.ttf') format('truetype');
+  font-style: italic;
+}
+
+@font-face {
   font-family: 'Overpass';
   src: url('/fonts/Overpass-Variable.ttf') format('truetype');
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Overpass';
+  src: url('/fonts/Overpass-Italic-Variable.ttf') format('truetype');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Overpass Mono';
+  src: url('/fonts/OverpassMono-Variable.ttf') format('truetype');
+  font-style: normal;
+}
+
 $sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'sans-serif';
-$serif: 'Iowan Old Style', 'Apple Garamond', 'Baskerville', 'Times New Roman', 'Droid Serif', 'Times', 'Source Serif Pro', 'serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+$serif: 'Iowan Old Style', 'Apple Garamond', 'Baskerville', 'Times New Roman', 'Droid Serif', Times, 'Source Serif Pro', serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+$mono: Menlo, Consolas, Monaco, 'Liberation Mono', 'Lucida Console', monospace;
+
 
 $sign-radius: 1rem;
-$sign-green: #01735c;
+// $sign-green: #01735c;
+$sign-green: #2e8b57;
+// $sign-green: #00a86b;
+
 
 html {
   border: solid white;
@@ -39,13 +62,10 @@ html {
 body { 
   background: $nord6; 
   // background: $sign-green;
-}
-
-body {
   color: $nord0;
   font-family: 'Inter', $sans;
   max-width: 720px;
-  font-size: 110%;
+  font-size: 18px;
   line-height: 1.4;
   margin: 0 auto;
   padding: 0 3rem;
@@ -56,15 +76,9 @@ body {
 
 .post-meta { text-align: right; }
 
-.header {
-  text-align: center;
-  font-size: 125%;
-  letter-spacing: 0.07em;
-  margin-bottom: 3rem;
-}
-
 h1, h2, h3, h4, h5, h6 { 
   font-family: 'Overpass', $sans;
+  font-weight: 600;
 }
 
 p { margin: 1rem 0; }
@@ -94,10 +108,13 @@ table, th, td {
 }
 
 code {
-  background: rgba(0, 0, 0, 0.1);
+  font-family: $mono;
+  background: $nord4;
+  padding: 0.2rem;
+  border-radius: 0.4rem;
 }
 
-pre code {
+pre code { // code blocks
   display: block;
   overflow-x: auto;
   white-space: pre-wrap;
@@ -106,9 +123,20 @@ pre code {
 
 blockquote {
   border-left: solid grey;
-  padding: 1rem;
-
+  padding: 0.5rem 1rem;
   p { margin: 0; }
+}
+
+.callout {
+  font-family: 'Overpass', $sans;
+  margin: 1.25em 0;
+  // background-color: white;
+  color: $sign-green;
+  border:solid $sign-green;
+  border-radius: $sign-radius;
+  padding: 0.5em 1em;
+  display: flex;
+  gap: 12px;
 }
 
 img {
@@ -117,30 +145,76 @@ img {
   margin: 0 auto;
 }
 
-// .footnote-definition {
-//   padding: 0 1rem;
-//   &:target {
-//     background: yellow;
-//     color: #212121;
-//   }
-//   p {
-//     display: inline;
-//   }
-// }
+// Traffic headers
+.header {
+  font-family: 'Overpass', $sans;
+  position: relative;
+  margin-bottom: 3rem;
+  font-size: 1.25em;
+  letter-spacing: 0.15rem;
+  font-weight: 450 !important;
+}
 
-// nav, .taxonomies { text-align: center; }
+.header-inner {
+  background: $sign-green;
+  // margin-top: 0;
+  padding-top: 1.25rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  color: white;
+  border: solid white;
+  border-radius: $sign-radius;
+}
+
+.header-alt {
+  @extend .header-inner;
+  background: white;
+  color: black;
+  border: solid black;
+}
+
+.exit-small {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 1em;
+  padding: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0rem;
+  color: white;
+  border: solid white 0.2rem;
+  border-radius: $sign-radius;
+}
+
+// Titles
 
 .title-block {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  margin-bottom: 0.5em;
 }
-.title {
-  margin-bottom: 0.5rem;
+
+.post-title-block {
+  @extend .title-block;
+  margin-bottom: 0;
+  font-size: 1.75em;
+  font-family: 'Overpass', $sans;
+  font-weight: 400;
+}
+
+.post-title, .title {
   margin-right: 3rem;
 }
+
+.title {
+  margin-top: 1rem;
+}
+
 .subtitle {
+  font-family: 'Overpass Mono', $mono;
   font-weight: 200;
+  color: $nord1;
   margin-top: 0;
   white-space: nowrap;
 }
@@ -176,3 +250,17 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 100ms;
 }
+
+// THAR BE DRAGONS
+.footnote-definition {
+  padding: 0 1rem;
+  &:target {
+    background: yellow;
+    color: #212121;
+  }
+  p {
+    display: inline;
+  }
+}
+
+nav, .taxonomies { text-align: center; }
