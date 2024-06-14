@@ -1,0 +1,38 @@
+$sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'sans-serif';
+$serif: 'Iowan Old Style', 'Apple Garamond', 'Baskerville', 'Times New Roman', 'Droid Serif', Times, 'Source Serif Pro', serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+$mono: Menlo, Consolas, Monaco, 'Liberation Mono', 'Lucida Console', monospace;
+
+$sign-radius: 1rem;
+// $sign-green: #01735c;
+$sign-green: #2e8b57;
+// $sign-green: #00a86b;
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/InterVariable.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/InterVariable-Italic.ttf') format('truetype');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('/fonts/Overpass-Variable.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('/fonts/Overpass-Italic-Variable.ttf') format('truetype');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Overpass Mono';
+  src: url('/fonts/OverpassMono-Variable.ttf') format('truetype');
+  font-style: normal;
+}
