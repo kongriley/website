@@ -1,5 +1,7 @@
 +++
 title = "Antilibrary"
+description = "books, articles, resources I haven't read yet"
+weight = 0
 template = "info-page.html"
 +++
 
@@ -97,7 +99,7 @@ Someday, I'll get around to reading these materials...
 
 [1312.6211 Goodfellow et al. 2013 / An Empirical Investigation of Catastrophic Forgetting in Gradient-Based Neural Networks](https://arxiv.org/abs/1312.6211)
 
-
+<!--
 # big list
 - (any untagged papers in this vault)
 - https://www.lesswrong.com/posts/CkFBMG6A9ytkiXBDM/sparse-autoencoders-future-work
@@ -224,3 +226,5 @@ https://learnhowtolearn.org/how-i-cured-procrastination/
 ## literature
 - ernest hemingway
 	- the old man and the sea
+
+-->

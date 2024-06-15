@@ -11,6 +11,13 @@ title = "Beginnings"
 
 lol i made this page last christmas but i never wrote anything in it
 
+# Header test 
+```python
+import this
+
+for i in range(10):
+  print(i)
+```
 Quae et nisi id vitae ab pariatur. Perferendis ab quis odio corrupti repudiandae. Eveniet provident placeat quo sit placeat.
 
 Enim ad cupiditate dignissimos animi vel quod. Aspernatur ut voluptas aut qui voluptatem deleniti. Ipsum labore et harum repudiandae quia consequatur sit.

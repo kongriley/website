@@ -3,15 +3,15 @@
 {% block content %}
 
 <h1 class="header-alt">
-  Blog
+  Projects
 </h1>
 
 <!-- If you are using pagination, section.pages will be empty. You need to use the paginator object -->  
 {% for page in section.pages %}
 <a href="{{ page.path | safe }}" class="black">
-  <div class="title-block post-title-block">
+  <div class="post-title-block">
     <div class="post-title">{{ page.title }} </div>
-    <div class="subtitle">{{ page.date }}</div>
+    <div class="description">{{ page.description }}</div>
   </div>
 </a>
 {% endfor %}

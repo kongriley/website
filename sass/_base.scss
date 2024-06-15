@@ -1,34 +1,35 @@
 @use 'variables' as *;
 @use 'nord' as *;
+@use 'highway' as *;
 
-html {
+html .base {
   border: solid white;
   border-radius: $sign-radius;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   min-height: 100%;
+  padding: 0;
 }
 
 body { 
+  font: 1rem 'Inter', $sans;
   background: $nord6; 
   // background: $sign-green;
   color: $nord0;
-  font-size: 18px;
   line-height: 1.4;
   min-height: 100%;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  padding: 0;
+  margin: 0;
 }
 
 .container {
-  font-family: 'Inter', $sans;
   max-width: 720px;
   margin: 0 auto;
   padding: 0 3rem;
 }
-
-.post-meta { text-align: right; }
 
 h1, h2, h3, h4, h5, h6 { 
   font-family: 'Overpass', $sans;
@@ -42,16 +43,32 @@ a {
   text-decoration: none;
 }
 
-a:hover { color: $nord9; }
+a:hover { color: $nord8; }
+
+.anchor {
+  margin-left: 0.5em;
+  color: $nord4;
+}
 
 .header, .black { 
   color: $nord0; 
   &:hover {
-    color: $nord3;
+    color: $nord10;
   }
 }
 
-li { margin: 0.4rem 0; }
+.white {
+  color: white;
+  &:hover {
+    color: white;
+  }
+}
+
+li:has(input[type=checkbox]) {
+  list-style-type: none;
+  margin-left: -2rem;
+}
+
 
 table { width: 100%; }
 
@@ -69,6 +86,8 @@ code {
 }
 
 pre code { // code blocks
+  border-radius: 0;
+  background: $nord0;
   display: block;
   overflow-x: auto;
   white-space: pre-wrap;
@@ -97,6 +116,92 @@ img {
   max-width: 100%;
   display: block;
   margin: 0 auto;
+}
+
+// Titles
+
+.title-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.5em;
+}
+
+.post-title-block {
+  margin-bottom: 0;
+  font: 1.75em 'Overpass', $sans;
+  font-weight: 400;
+}
+
+.post-title, .title {
+  margin-right: 3rem;
+}
+
+.title {
+  margin-top: 1rem;
+}
+
+.subtitle {
+  font-family: 'Overpass Mono', $mono;
+  font-weight: 200;
+  color: $nord1;
+  margin-top: 0;
+  white-space: nowrap;
+}
+
+.description {
+  font-family: 'Inter', $sans;
+  font-weight: 325;
+  color: $nord2;
+  font-size: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+.exit {
+  opacity: 0;
+  text-align: center;
+  letter-spacing: 0.07em;
+  background-color: $sign-green;
+  font-style: normal;
+  color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  border: solid white;
+  border-radius: $sign-radius;
+  z-index: 1000;
+}
+
+// 404 page
+.error-box {
+  height: 80vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  font-size: 1.5em;
+  .wrong-way-sign {
+    background-color: #da291C;
+    color: white;
+    font: 2em 'Overpass', $sans;
+    font-weight: 600;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    padding-bottom: 1rem;
+    vertical-align: middle;
+    border-radius: calc($sign-radius / 2);
+  }
+  div {
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+  }
 }
 
 // THAR BE DRAGONS
