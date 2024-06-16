@@ -10,6 +10,7 @@ template = "info-page.html"
 - [ ] Make index bridge look nicer
 - [ ] Actually write blogs
 - [ ] Mobile dev
+  - [ ] exit sign on header for mobile
 
 
 # BUGS

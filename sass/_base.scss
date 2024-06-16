@@ -1,6 +1,7 @@
 @use 'variables' as *;
 @use 'nord' as *;
 @use 'highway' as *;
+@use 'include-media' as *;
 
 html .base {
   border: solid white;

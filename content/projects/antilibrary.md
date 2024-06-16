@@ -32,6 +32,7 @@ Someday, I'll get around to reading these materials...
 
 [2402.04362 Belrose et al. 2024 / Neural Networks Learn Statistics of Increasing Complexity](https://arxiv.org/abs/2402.04362)
 
+[2207.13243 Räuker et al. 2023 / Toward Transparent AI: A Survey on Interpreting the Inner Structures of Deep Neural Networks](https://arxiv.org/abs/2207.13243)
 
 [2311.00212 Otto et al. 2023 / A Unified Framework to Enforce, Discover, and Promote Symmetry in Machine Learning](https://arxiv.org/abs/2311.00212)
 
