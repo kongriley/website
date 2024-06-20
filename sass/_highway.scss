@@ -3,6 +3,7 @@
 
 
 $sign-radius: 1rem;
+$sign-border-thickness: 0.2rem;
 // $sign-green: #01735c;
 $sign-green: #2c6650;
 // $sign-green: #00a86b;
@@ -45,7 +46,7 @@ $safety-orange: #ff904a;
   min-width: 8vw;
   // min-height: 10vh;
   vertical-align: middle;
-  border: solid white 5px;
+  border: solid white $sign-border-thickness;
   color: white;
   border-radius: $sign-radius;
   background-color: $sign-green;
@@ -101,7 +102,7 @@ $safety-orange: #ff904a;
   padding-bottom: 0.5rem;
   text-align: center;
   color: white;
-  border: solid white;
+  border: solid white $sign-border-thickness;
   border-radius: $sign-radius;
 }
 
@@ -109,7 +110,7 @@ $safety-orange: #ff904a;
   @extend .header-inner;
   background: white;
   color: black;
-  border: solid black;
+  border: solid black $sign-border-thickness;
 }
 
 .exit-small {
@@ -122,7 +123,7 @@ $safety-orange: #ff904a;
   padding-bottom: 0rem;
   margin: 0;
   color: white;
-  border: solid white 0.2rem;
+  border: solid white $sign-border-thickness;
   background-color: $sign-green;
   border-radius: calc($sign-radius / 2);
 }
