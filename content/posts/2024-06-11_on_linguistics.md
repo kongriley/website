@@ -1,6 +1,8 @@
 +++
 title = "On Linguistics"
-# date = 2023-06-11
+
+[extra]
+draft = true
 +++
 
 What's the point of linguistics?
