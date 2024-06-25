@@ -1,6 +1,5 @@
 +++
 title = "Beginnings"
-# date = 2023-12-25
 +++
 
 > <div style="font-family: Times New Roman; font-size: 2em; text-direction: right;">בְּרֵאשִׁית</div>

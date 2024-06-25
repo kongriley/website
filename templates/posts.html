@@ -8,11 +8,13 @@
 
 <!-- If you are using pagination, section.pages will be empty. You need to use the paginator object -->  
 {% for page in section.pages %}
+{% if not page.extra.draft %}
 <a href="{{ page.path | safe }}" class="black">
   <div class="title-block post-title-block">
     <div class="post-title">{{ page.title }} </div>
     <div class="subtitle">{{ page.date }}</div>
   </div>
 </a>
+{% endif %}
 {% endfor %}
 {% endblock content %}
