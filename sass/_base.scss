@@ -1,7 +1,6 @@
 @use 'variables' as *;
 @use 'nord' as *;
 @use 'highway' as *;
-@use 'include-media' as *;
 
 html .base {
   border: solid white;
@@ -104,9 +103,9 @@ blockquote {
 .callout {
   font-family: 'Overpass', $sans;
   margin: 1.25em 0;
-  // background-color: white;
+  // background: white;
   color: $sign-green;
-  border:solid $sign-green;
+  border:solid $sign-green 0.15rem;
   border-radius: $sign-radius;
   padding: 0.5em 1em;
   display: flex;
@@ -162,7 +161,7 @@ img {
   opacity: 0;
   text-align: center;
   letter-spacing: 0.07em;
-  background-color: $sign-green;
+  background: $sign-green;
   font-style: normal;
   color: white;
   position: fixed;
@@ -187,7 +186,7 @@ img {
   gap: 4rem;
   font-size: 1.5em;
   .wrong-way-sign {
-    background-color: #da291C;
+    background: #da291C;
     color: white;
     font: 2em 'Overpass', $sans;
     font-weight: 600;

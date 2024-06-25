@@ -1,6 +1,7 @@
 @use 'variables' as *;
 @use 'nord' as *;
-
+@use 'include-media' as *;
+@use 'sass:color';
 
 $sign-radius: 1rem;
 // $sign-green: #01735c;
@@ -24,14 +25,14 @@ $safety-orange: #ff904a;
 }
 
 .big-sign {
-  // background-color: $sign-green;
+  // background: $sign-green;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   padding: 1em;
   width: 100vw;
-  background-color: lightgray;
+  background: lightgray;
   align-items: stretch;
 }
 
@@ -49,11 +50,22 @@ $safety-orange: #ff904a;
   color: white;
   border-radius: $sign-radius;
   background-color: $sign-green;
+  position: relative;
   &:hover {
     color: white;
+    background: radial-gradient(
+        circle at bottom center,
+        color.scale($sign-green, $lightness: 40%),
+        color.scale($sign-green, $lightness: 25%) 10%,
+        color.scale($sign-green, $lightness: 15%) 30%,
+        $sign-green 100%
+    );
     filter: $drop-shadow;
   }
-  position: relative;
+}
+
+.element:hover::before {
+  opacity: 1;
 }
 
 .main-sign-component {
@@ -73,7 +85,7 @@ $safety-orange: #ff904a;
   font-weight: 600;
   padding: 0.5rem;
   border-radius: calc($sign-radius / 2);
-  background-color: $safety-orange;
+  background: $safety-orange;
 }
 
 .down-arrow {
@@ -123,8 +135,11 @@ $safety-orange: #ff904a;
   margin: 0;
   color: white;
   border: solid white 0.2rem;
-  background-color: $sign-green;
+  background: $sign-green;
   border-radius: calc($sign-radius / 2);
+  @include media("<tablet") {
+    display: none;
+  }
 }
 
 .exit > h1 {

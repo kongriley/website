@@ -8,6 +8,9 @@ template = "info-page.html"
 Someday, I'll get around to reading these materials...
 
 # Papers
+
+[2406.14546 Treutlein et al. 2024 / Connecting the Dots: LLMs can Infer and Verbalize Latent Structure from Disparate Training Data](https://arxiv.org/abs/2406.14546)
+
 [2403.13799 Golovneva et al. 2024 / Reverse Training to Nurse the Reversal Curse](https://arxiv.org/abs/2403.13799)
 
 [2403.06634 Carlini et al. 2024 / Stealing Part of a Production Language Model](https://arxiv.org/abs/2403.06634)
