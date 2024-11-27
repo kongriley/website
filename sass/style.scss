@@ -1,4 +1,8 @@
-// Nord Colors
+// =================
+// Variables
+// =================
+
+// Colors - Nord Theme
 $nord0: #2E3440;
 $nord1: #3B4252;
 $nord2: #434C5E;
@@ -20,28 +24,39 @@ $spacing-small: 0.5rem;
 $spacing-base: 1rem;
 $spacing-large: 1.5rem;
 
-// Font families
+// Font Stacks
 $font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
-$font-family-heading: 'Overpass', $font-family-base;
+$font-family-heading: 'Overpass', 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
 $font-family-mono: 'Overpass Mono', ui-monospace, "SF Mono", Menlo, monospace;
+
+// =================
+// Font Face Declarations
+// =================
 
 @font-face {
   font-family: 'Inter';
   src: url('/fonts/InterVariable.ttf') format('truetype');
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Overpass';
   src: url('/fonts/Overpass-Variable.ttf') format('truetype');
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Overpass Mono';
   src: url('/fonts/OverpassMono-Variable.ttf') format('truetype');
   font-style: normal;
+  font-display: swap;
 }
+
+// =================
+// Base Styles
+// =================
 
 body {
   font-family: $font-family-base;
@@ -50,62 +65,27 @@ body {
   line-height: $line-height-base;
   color: $nord0;
   margin: 0;
-  padding: 0 1rem;
-  opacity: 0;
-  transition: opacity 0.1s ease-in;
+  padding: 0 $spacing-base;
+  visibility: visible;
 }
+
+// =================
+// Typography
+// =================
 
 h1, h2, h3, h4, h5, h6 { 
   font-family: $font-family-heading;
   font-weight: 500;
 }
 
-.fonts-loaded body {
-  opacity: 1;
-}
-
-.main-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 70vh;
-  font: 3rem $font-family-heading;
-  gap: 1.2rem;
-}
-
-.content {
-  max-width: 720px;  
-  margin: 0 auto;
-  // background: $nord6;
-}
-
-.page-header {
-  margin-top: 3rem;
-  text-align: center;
-}
-
 a {
   color: $nord10;
   text-decoration: none;
   transition: color 20ms cubic-bezier(0.95, 0.05, 0.795, 0.035);
-}
 
-a:hover {
-  color: $nord9;
-}
-
-.main-container > a, .page-header > a, a > .title-block, a > .post-title-block {
-  color: $nord0;
   &:hover {
-    color: $nord10 !important;
+    color: $nord9;
   }
-}
-
-
-img {
-  max-width: 100%;
-  height: auto;
 }
 
 code {
@@ -126,21 +106,51 @@ blockquote {
   border-left: 2px solid $nord4;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
+// =================
+// Layout
+// =================
+
+.content {
+  max-width: 720px;  
+  margin: 0 auto;
 }
 
-th, td {
-  border: 1px solid $nord4;
-  padding: $spacing-small;
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  font: 3rem $font-family-heading;
+  gap: 1.2rem;
+
+  > a {
+    color: $nord0;
+    &:hover {
+      color: $nord10 !important;
+    }
+  }
 }
 
-// Titles
+.page-header {
+  margin-top: 3rem;
+  text-align: center;
 
+  > a {
+    color: $nord0;
+    &:hover {
+      color: $nord10 !important;
+    }
+  }
+}
+
+// =================
+// Components
+// =================
+
+// Title Blocks
 .title-block {
   display: flex;
-  // justify-content: space-between;
   gap: 3rem;
   align-items: baseline;
   margin-bottom: 0.5em;
@@ -152,10 +162,9 @@ th, td {
   font-weight: 400;
 }
 
-.post-title, .title {
+.title, .post-title {
   margin-right: 3rem;
 }
-
 
 .title {
   margin-top: 1rem;
@@ -176,4 +185,36 @@ th, td {
   font-weight: 325;
   font-size: 0.75em;
   margin-bottom: 0.75em;
+}
+
+// Links to title blocks
+a > .title-block,
+a > .post-title-block {
+  color: $nord0;
+  &:hover {
+    color: $nord10 !important;
+  }
+}
+
+// =================
+// Media
+// =================
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// =================
+// Tables
+// =================
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid $nord4;
+  padding: $spacing-small;
 }
