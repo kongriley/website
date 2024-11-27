@@ -7,5 +7,5 @@ template = "info-page.html"
 
 # Cool blogs
 - [Tanay Biradar](https://tanaybiradar.com/)
-- [Prashanth Rao | The Data Quary](thedataquarry.com/)
+- [Prashanth Rao | The Data Quary](https://thedataquarry.com/)
 - [Nikita Karamov](https://www.kytta.dev/)

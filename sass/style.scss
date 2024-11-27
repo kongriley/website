@@ -1,2 +1,179 @@
-@use 'base';
-@use 'highway';
+// Nord Colors
+$nord0: #2E3440;
+$nord1: #3B4252;
+$nord2: #434C5E;
+$nord3: #4C566A;
+$nord4: #D8DEE9;
+$nord5: #E5E9F0;
+$nord6: #ECEFF4;
+$nord7: #8FBCBB;
+$nord8: #88C0D0;
+$nord9: #81A1C1;
+$nord10: #5E81AC;
+
+// Typography
+$font-size-base: 1.1rem;
+$line-height-base: 1.5;
+
+// Spacing
+$spacing-small: 0.5rem;
+$spacing-base: 1rem;
+$spacing-large: 1.5rem;
+
+// Font families
+$font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+$font-family-heading: 'Overpass', $font-family-base;
+$font-family-mono: 'Overpass Mono', ui-monospace, "SF Mono", Menlo, monospace;
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/InterVariable.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('/fonts/Overpass-Variable.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Overpass Mono';
+  src: url('/fonts/OverpassMono-Variable.ttf') format('truetype');
+  font-style: normal;
+}
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  font-weight: 350;
+  line-height: $line-height-base;
+  color: $nord0;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  transition: opacity 0.1s ease-in;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+  font-family: $font-family-heading;
+  font-weight: 500;
+}
+
+.fonts-loaded body {
+  opacity: 1;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  font: 3rem $font-family-heading;
+  gap: 1.2rem;
+}
+
+.content {
+  max-width: 720px;  
+  margin: 0 auto;
+  // background: $nord6;
+}
+
+.page-header {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+a {
+  color: $nord10;
+  text-decoration: none;
+  transition: color 20ms cubic-bezier(0.95, 0.05, 0.795, 0.035);
+}
+
+a:hover {
+  color: $nord9;
+}
+
+.main-container > a, .page-header > a, a > .title-block, a > .post-title-block {
+  color: $nord0;
+  &:hover {
+    color: $nord10 !important;
+  }
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+code {
+  font-family: $font-family-mono;
+  background: $nord6;
+  padding: $spacing-small * 0.4;
+}
+
+pre code {
+  display: block;
+  padding: $spacing-base;
+  overflow-x: auto;
+}
+
+blockquote {
+  margin: $spacing-base 0;
+  padding-left: $spacing-base;
+  border-left: 2px solid $nord4;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid $nord4;
+  padding: $spacing-small;
+}
+
+// Titles
+
+.title-block {
+  display: flex;
+  // justify-content: space-between;
+  gap: 3rem;
+  align-items: baseline;
+  margin-bottom: 0.5em;
+}
+
+.post-title-block {
+  margin-bottom: 0;
+  font: 1.5em $font-family-heading;
+  font-weight: 400;
+}
+
+.post-title, .title {
+  margin-right: 3rem;
+}
+
+
+.title {
+  margin-top: 1rem;
+}
+
+.post-title {
+  font-size: 1.5rem;
+}
+
+.subtitle {
+  font-family: $font-family-mono;
+  font-weight: 200;
+  margin-top: 0;
+  white-space: nowrap;
+}
+
+.description {
+  font-weight: 325;
+  font-size: 0.75em;
+  margin-bottom: 0.75em;
+}

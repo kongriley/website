@@ -1,8 +1,9 @@
 {% extends "base.html" %}
 
+{% block page_title %}
+/ {{ page.title }}
+{% endblock %}
+
 {% block content %}
-<h1 class="header-alt">
-  {{page.title | safe}}
-</h1>
 {{ page.content | safe }}
 {% endblock content %}

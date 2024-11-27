@@ -1,14 +1,13 @@
 {% extends "base.html" %}
 
+{% block page_title %}
+/ Projects
+{% endblock %}
+
 {% block content %}
-
-<h1 class="header-alt">
-  Projects
-</h1>
-
 <!-- If you are using pagination, section.pages will be empty. You need to use the paginator object -->  
 {% for page in section.pages %}
-<a href="{{ page.path | safe }}" class="black">
+<a href="{{ page.path | safe }}" class="title-block">
   <div class="post-title-block">
     <div class="post-title">{{ page.title }} </div>
     <div class="description">{{ page.description }}</div>
