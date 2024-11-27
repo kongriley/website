@@ -7,7 +7,7 @@ template = "info-page.html"
 
 - [ ] Flesh out colophon
 - [ ] Fill out about section
-- [ ] Make index bridge look nicer
+- [x] Make index bridge look nicer
 - [ ] Actually write blogs
 - [ ] Mobile dev
   - [ ] exit sign on header for mobile
