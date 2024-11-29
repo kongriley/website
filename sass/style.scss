@@ -14,6 +14,11 @@ $nord7: #8FBCBB;
 $nord8: #88C0D0;
 $nord9: #81A1C1;
 $nord10: #5E81AC;
+$nord11: #BF616A;
+$nord12: #D08770;
+$nord13: #EBCB8B;
+$nord14: #A3BE8C;
+$nord15: #B48EAD;
 
 // Typography
 $font-size-base: 1.1rem;
@@ -218,4 +223,36 @@ table {
 th, td {
   border: 1px solid $nord4;
   padding: $spacing-small;
+}
+
+
+// 404
+
+.error-box {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1rem;
+  column-gap: 3rem;
+  font: 1.5rem $font-family-heading;
+  h1 {
+    margin: 0;
+  }
+  text-align: center;
+  @media only screen and (min-width: 640px) {
+    min-height: 70vh;
+    text-align: left;
+	}
+}
+.wrong-way-sign {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  background: #da291c;
+  color: white;
+  padding: 1rem 1.5rem 0.5rem 1.5rem;
+  margin: $spacing-large;
+  border-radius: .5rem;
+  vertical-align: middle;
 }
