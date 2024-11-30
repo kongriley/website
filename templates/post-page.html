@@ -1,10 +1,17 @@
 {% extends "base.html" %}
 
 {% block page_title %}
-/ <a href="/posts">Posts</a> / <a href="{{ page.path }}">{{ page.title }}</a>
+<h1 class="page-header">
+    <a href="/">Riley Kong</a>
+    / <a href="/posts">Posts</a>
+</h1>
 {% endblock %}
 
 {% block content %}
-<div class="subtitle">{{ page.date }}</div>
+<div class="page-title">
+    <h1>{{ page.title }}</h1>
+    <div class="subtitle">{{ page.date }}</div>
+    <hr>
+</div>
 {{ page.content | safe }}
 {% endblock content %}

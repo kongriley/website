@@ -1,19 +1,24 @@
 {% extends "base.html" %}
 
 {% block page_title %}
-/ Posts
+<h1 class="page-header">
+    <a href="/">Riley Kong</a>
+    / Posts
+</h1>
 {% endblock %}
 
 {% block content %}
 <!-- If you are using pagination, section.pages will be empty. You need to use the paginator object -->  
-{% for page in section.pages %}
-{% if not page.extra.draft %}
-<a href="{{ page.path | safe }}">
-  <div class="title-block post-title-block">
-    <div class="subtitle">{{ page.date }}</div>
-    <div class="post-title">{{ page.title }} </div>
-  </div>
-</a>
-{% endif %}
-{% endfor %}
+<div class="list-container">
+  {% for page in section.pages %}
+  {% if not page.extra.draft %}
+  <a href="{{ page.path | safe }}">
+    <div class="title-block post-title-block">
+      <div class="subtitle">{{ page.date }}</div>
+      <div class="post-title">{{ page.title }} </div>
+    </div>
+  </a>
+  {% endif %}
+  {% endfor %}
+</div>
 {% endblock content %}

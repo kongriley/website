@@ -68,9 +68,9 @@ body {
   font-size: $font-size-base;
   font-weight: 350;
   line-height: $line-height-base;
-  color: $nord0;
+  color: $nord1;
   margin: 0;
-  padding: 0 $spacing-base;
+  padding: 0 1.5rem;
   visibility: visible;
 }
 
@@ -81,28 +81,32 @@ body {
 h1, h2, h3, h4, h5, h6 { 
   font-family: $font-family-heading;
   font-weight: 500;
+  color: $nord0;
 }
 
 a {
   color: $nord10;
   text-decoration: none;
-  transition: color 20ms cubic-bezier(0.95, 0.05, 0.795, 0.035);
 
   &:hover {
     color: $nord9;
+    text-decoration: underline;
   }
 }
 
 code {
   font-family: $font-family-mono;
   background: $nord6;
-  padding: $spacing-small * 0.4;
+  padding: 0.2rem 0.4rem;
+  border-radius: 5px;
 }
 
 pre code {
   display: block;
   padding: $spacing-base;
   overflow-x: auto;
+  background: $nord0;
+  border-radius: 0;
 }
 
 blockquote {
@@ -150,6 +154,11 @@ blockquote {
   }
 }
 
+hr {
+  border: 1px solid $nord4;
+  margin-top: 0;
+}
+
 // =================
 // Components
 // =================
@@ -185,7 +194,23 @@ blockquote {
   font-weight: 200;
   margin-top: 0;
   white-space: nowrap;
+  font-size: 1.5rem;
+  opacity: 0.5;
 }
+
+.page-title {
+  font-size: 1.3em;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  h1 {
+    margin-bottom: 0.5rem;
+    line-height: normal;
+  }
+  .subtitle {
+    font-size: 1.25rem;
+  }
+}
+
 
 .description {
   font-weight: 325;
@@ -196,10 +221,15 @@ blockquote {
 // Links to title blocks
 a > .title-block,
 a > .post-title-block {
-  color: $nord0;
+  color: $nord1;
   &:hover {
     color: $nord10 !important;
   }
+}
+
+.anchor {
+  margin-left: 1rem;
+  color: $nord4;
 }
 
 // =================
@@ -255,4 +285,53 @@ th, td {
   margin: $spacing-large;
   border-radius: .5rem;
   vertical-align: middle;
+}
+
+// About page
+
+.info-card {
+  font-family: $font-family-mono;
+  background-color: $nord6;
+  padding: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border-radius: 0.5rem;
+  display: flex;
+  row-gap: 1rem;
+  column-gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+
+  @media only screen and (max-width: 640px) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+img[src$="/assets/headshot.jpg"] {
+  border-radius: 50%;
+  float: left;
+  margin: 0.1rem;
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+  background-color: #E5E9F0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+
+  &.loaded {
+    opacity: 1;
+  }
 }
