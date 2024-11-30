@@ -7,7 +7,7 @@ page_template = "index.html"
 <div class="info-card">
 
 
-<img src="/assets/headshot.jpg" alt="Headshot of myself" onload="this.classList.add('loaded')">
+<img src="/assets/headshot.jpg" alt="Headshot of myself" onload="this.classList.add('loaded')" width="150" height="150">
 
 <div>
 
