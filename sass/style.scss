@@ -220,7 +220,8 @@ hr {
 
 // Links to title blocks
 a > .title-block,
-a > .post-title-block {
+a > .post-title-block,
+.nav-bar a {
   color: $nord1;
   &:hover {
     color: $nord10 !important;
@@ -289,22 +290,49 @@ th, td {
 
 // About page
 
+.info-wrapper {
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+}
+
+.nav-bar {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+
+  background-color: rgba($nord6, 0.75);
+  
+  font-family: $font-family-heading;
+
+  p, h2 {
+    margin: 0;
+    padding: 0;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+}
+
+
 .info-card {
   font-family: $font-family-mono;
-  background-color: $nord6;
+  background-color: $nord5;
   padding: 2rem;
   padding-left: 3rem;
   padding-right: 3rem;
-  border-radius: 0.5rem;
+  border-radius: 0.5rem 0.5rem 0 0;
   display: flex;
   row-gap: 1rem;
   column-gap: 2rem;
   align-items: center;
   justify-content: center;
-  width: fit-content;
-  margin: 0 auto;
-  margin-top: 6rem;
-  margin-bottom: 2rem;
 
   @media only screen and (max-width: 640px) {
     flex-direction: column;
