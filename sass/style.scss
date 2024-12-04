@@ -240,12 +240,13 @@ hr {
   margin-top: 4rem;
   margin-bottom: 2rem;
   h1 {
-    margin-bottom: 0;
+    margin-bottom: 0.25rem;
     line-height: normal;
     font-weight: 600;
   }
   .subtitle {
     font-size: 1.25rem;
+    opacity: 0.6;
   }
   
 }
