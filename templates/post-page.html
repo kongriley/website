@@ -1,11 +1,7 @@
 {% extends "base.html" %}
 
 {% block extra_style %}
-<style>
-    .content {
-        max-width: 840;
-    }
-</style>
+<link rel="stylesheet" href="/post-page.css">
 {% endblock %}
 
 {% block page_title %}
@@ -21,5 +17,7 @@
     <div class="subtitle">{{ page.date }}</div>
     <hr>
 </div>
-{{ page.content | safe }}
+<div class="blog-content">
+    {{ page.content | safe }}
+</div>
 {% endblock content %}

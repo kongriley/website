@@ -152,6 +152,10 @@ blockquote {
   max-width: 720px;  
   margin: 0 auto;
   padding-bottom: 6rem;
+
+  &:has(> .blog-content) {
+    max-width: 840px;
+  }
 }
 
 .main-container {
