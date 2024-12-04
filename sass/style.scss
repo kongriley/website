@@ -74,6 +74,11 @@ body {
   visibility: visible;
 }
 
+html {
+  overflow-x: hidden;
+  padding-left: calc(100vw - 100%);
+}
+
 // =================
 // Typography
 // =================
@@ -144,7 +149,7 @@ blockquote {
 // =================
 
 .content {
-  max-width: 840px;  
+  max-width: 720px;  
   margin: 0 auto;
   padding-bottom: 6rem;
 }
@@ -168,6 +173,7 @@ blockquote {
 
 .page-header {
   margin-top: 3rem;
+  margin-bottom: 3rem;
   text-align: center;
 
   > a {
@@ -190,27 +196,30 @@ hr {
 // Title Blocks
 .title-block {
   display: flex;
-  gap: 3rem;
+  flex-direction: column;
+  column-gap: 3rem;
   align-items: baseline;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5rem;
+  
+  @media only screen and (min-width: 640px) {
+    flex-direction: row;
+	}
 }
 
 .post-title-block {
-  margin-bottom: 0;
+  margin-bottom: 1.5rem;
   font: 1.5em $font-family-heading;
   font-weight: 400;
-}
 
-.title, .post-title {
-  margin-right: 3rem;
-}
-
-.title {
-  margin-top: 1rem;
+  @media only screen and (min-width: 640px) {
+    margin-bottom: 0.25rem;
+	}
 }
 
 .post-title {
+  margin-right: 3rem;
   font-size: 1.5rem;
+  font-weight: 350;
 }
 
 .subtitle {
@@ -218,7 +227,7 @@ hr {
   font-weight: 200;
   margin-top: 0;
   white-space: nowrap;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   opacity: 0.5;
 }
 
@@ -234,6 +243,7 @@ hr {
   .subtitle {
     font-size: 1.25rem;
   }
+  
 }
 
 
@@ -346,7 +356,7 @@ li:has(input[type=checkbox]) {
 
   h2 {
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 350;
   }
 }
 

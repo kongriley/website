@@ -20,11 +20,13 @@
       document.documentElement.classList.add("fonts-loaded");
     }
   </script>
+
+  {% block extra_style %}{% endblock %}
 </head>
 <body>
   {% block page_title %}{% endblock %}
   <div class="content">
-    {% block content %} {% endblock %}
+    {% block content %}{% endblock %}
   </div>
 </body>
 </html>

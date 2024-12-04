@@ -8,7 +8,7 @@ template = "info-page.html"
 - [x] Flesh out colophon
 - [x] Fill out about section
 - [x] Make index bridge look nicer
-- [ ] Actually write blogs
+- [x] Actually write blogs
 - [ ] Footnote handling
 
 
