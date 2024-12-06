@@ -190,7 +190,7 @@ blockquote {
 
 hr {
   border: 1px solid $nord4;
-  margin-top: 0;
+  margin-top: 3rem;
 }
 
 // =================
@@ -201,7 +201,7 @@ hr {
 .title-block {
   display: flex;
   flex-direction: column;
-  column-gap: 3rem;
+  column-gap: 2rem;
   align-items: baseline;
   margin-bottom: 0.5rem;
   
@@ -216,7 +216,7 @@ hr {
   font-weight: 400;
 
   @media only screen and (min-width: 640px) {
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
 	}
 }
 
@@ -247,6 +247,9 @@ hr {
   .subtitle {
     font-size: 1.25rem;
     opacity: 0.6;
+  }
+  hr {
+    margin-top: 0.5rem;
   }
   
 }
@@ -301,6 +304,16 @@ li:has(input[type=checkbox]) {
   margin-left: -2rem;
 }
 
+.footnote-definition {
+  p {
+    display: inline-block;
+    margin-left: 1rem;
+  }
+
+  &[id="1"] {
+    border-top: 2px solid $nord4;
+  }
+}
 
 // 404
 
