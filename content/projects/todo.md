@@ -15,3 +15,4 @@ template = "info-page.html"
 ## BUGS
 
 - [x] ul for checkboxes should not have bullet
+- [ ] CJK characters don't have defined font -- clash with height in /posts
