@@ -1,0 +1,207 @@
+{
+  "main": {
+    "id": "25d10b6c61911953",
+    "type": "split",
+    "children": [
+      {
+        "id": "340a81358c145435",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "413d53616442b530",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/2024-12-05_writing_poorly.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2024-12-05_writing_poorly"
+            }
+          },
+          {
+            "id": "84ddd09dfbe8fd8d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/2024-11-02_kou_character.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2024-11-02_kou_character"
+            }
+          },
+          {
+            "id": "c97825aaa00e3f53",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/2024-12-18_christmas_music.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2024-12-18_christmas_music"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "61ba40882ee3d94c",
+    "type": "split",
+    "children": [
+      {
+        "id": "4cd253f0e8b1ba0d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "159c2c3dfd6d187c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "4f6eef0353b4e992",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "3fbb2a2c9e2fcba1",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "5cff66965fec7b90",
+    "type": "split",
+    "children": [
+      {
+        "id": "b4149aaa31d1e8ea",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "da6c2f230c3e07d5",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "posts/2024-11-02_kou_character.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 2024-11-02_kou_character"
+            }
+          },
+          {
+            "id": "e573229efdf1ac40",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "posts/2024-11-02_kou_character.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 2024-11-02_kou_character"
+            }
+          },
+          {
+            "id": "6ac999bb837d7b1d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "a3542b226b4d50a1",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "posts/2024-11-02_kou_character.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 2024-11-02_kou_character"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "84ddd09dfbe8fd8d",
+  "lastOpenFiles": [
+    "posts/2024-12-18_christmas_music.md",
+    "posts/2024-12-30_i_want_to_be_white.md",
+    "posts/2024-12-05_writing_poorly.md",
+    "posts/2024-12-11_action_is_bitter.md",
+    "posts/2024-11-18_applying_to_japan.md",
+    "posts/2024-07-10_timesharing.md",
+    "posts/2024-06-25_sculpturist.md",
+    "posts/2024-06-11_on_linguistics.md",
+    "posts/2024-05-30_on_agency.md",
+    "posts/2023-11-30_beginnings.md"
+  ]
+}
