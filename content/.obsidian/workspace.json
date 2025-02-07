@@ -50,6 +50,18 @@
             }
           },
           {
+            "id": "5699c4a62657f39c",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.4"
+            }
+          },
+          {
             "id": "c97825aaa00e3f53",
             "type": "leaf",
             "state": {
@@ -64,7 +76,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -83,7 +95,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -205,7 +218,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "47824c5c22e4c0eb",
+  "active": "5699c4a62657f39c",
   "lastOpenFiles": [
     "posts/2025-11-24_mystery_hunt.md",
     "posts/2024-12-11_action_is_bitter.md",
