@@ -29,6 +29,7 @@ This is a list of books I have yet to read or are currently reading, categorized
 ## Self-Help
 - ***Unreasonable Hospitality*** by Will Guidara
 - *Peak* by Anders Pool and Karl Ericsson
+	- takeaway: focused, deliberate practice with feedback gives expert results
 
 
 ## Cooking

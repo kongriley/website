@@ -21,6 +21,12 @@
     }
   </script>
 
+  <!-- Analytics script from Vercel -->
+  <script>
+    import { inject } from '@vercel/analytics';
+    inject();
+  </script>
+
   {% block extra_style %}{% endblock %}
 </head>
 <body>
