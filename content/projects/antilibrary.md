@@ -1,19 +1,20 @@
 +++
-title = "Antilibrary"
-description = "things I haven't read yet"
+title = "Reading list"
+description = "things to read in the past, present, and future"
 weight = 0
 template = "info-page.html"
 +++
 
-This is a list of books I have yet to read or are currently reading, categorized by [BISAC](https://www.bisg.org/complete-bisac-subject-headings-list) category and ordered by number of books per category. Books in progress are **bolded**.
+This is a list of works I find compelling, categorized by [BISAC](https://www.bisg.org/complete-bisac-subject-headings-list) category.
 
 ## Fiction
 - *Crime and Punishment* by Fyodor Dostoyevsky
 - *Strong Female Character* by Fern Brady
 - Works by 夏目漱石 Natsume Sōseki
-  - **「坊っちゃん」 *Bocchan***
+  - 「坊っちゃん」 *Bocchan*
   - 「吾輩は猫である」 *I Am a Cat*
--  **「コンビニ人間」 *Convenience Store Woman*** by 村田沙耶香 Sayata Murata
+-  「コンビニ人間」 *Convenience Store Woman* by 村田沙耶香 Sayata Murata
+-  *The Handmaid's Tale* by Margaret Atwood
 
 ## Philosophy
 - *Gödel, Escher, Bach* by Douglas Hofstadter
@@ -27,10 +28,10 @@ This is a list of books I have yet to read or are currently reading, categorized
 - *Artful Sentences* by Virginia Tufte
 
 ## Self-Help
-- ***Unreasonable Hospitality*** by Will Guidara
+- *Unreasonable Hospitality* by Will Guidara
 - *Peak* by Anders Pool and Karl Ericsson
-	- takeaway: focused, deliberate practice with feedback gives expert results
-
+- *Four Thousand Weeks* by Oliver Burkeman
+- *Meditations for Mortals* by Oliver Burkeman
 
 ## Cooking
 - *Salt Fat Acid Heat* by Samin Nosrat 

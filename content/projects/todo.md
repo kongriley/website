@@ -10,7 +10,7 @@ template = "info-page.html"
 - [x] Make index bridge look nicer
 - [x] Actually write blogs
 - [x] Footnote handling
-- [ ] Currently reading for antilibrary
+- [x] Currently reading for antilibrary
 
 ## BUGS
 

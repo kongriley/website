@@ -10,4 +10,4 @@ I aimed for sort of a [U.S. highway sign](https://en.wikipedia.org/wiki/Road_sig
 In the process of selecting colors for this site, I was reminded that color is weird! The [US federal specification for traffic colors](https://mutcd.fhwa.dot.gov/kno-colorspec.htm) is a fascinating read on how colors are specified for highway signs. 
 {% end %}
 
-I take heavy inspiration from my good friend Tanay Biradar's [amazing website](https://tanaybiradar.com/)—check out his work!
+I take heavy inspiration from my good friend Tanay Biradar's [amazing website](https://tanaybiradar.com/) :)
