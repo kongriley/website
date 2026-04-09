@@ -41,3 +41,6 @@ This is a list of works I find compelling, categorized by [BISAC](https://www.bi
 
 ## History
 - *How to Hide an Empire* by Daniel Immerwahr
+
+## Political Science
+- *Abundance* by Ezra Klein
