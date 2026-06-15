@@ -83,7 +83,12 @@ html {
 // Typography
 // =================
 
-h1, h2, h3, h4, h5, h6 { 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $font-family-heading;
   font-weight: 500;
   color: $nord0;
@@ -107,7 +112,9 @@ h3 {
   line-height: 1.4;
 }
 
-h4, h5, h6 {
+h4,
+h5,
+h6 {
   margin-top: 1.5rem;
   margin-bottom: 0.75rem;
   line-height: 1.5;
@@ -149,7 +156,7 @@ blockquote {
 // =================
 
 .content {
-  max-width: 720px;  
+  max-width: 720px;
   margin: 0 auto;
   padding-bottom: 6rem;
 
@@ -167,8 +174,9 @@ blockquote {
   font: 3rem $font-family-heading;
   gap: 1.2rem;
 
-  > a {
+  >a {
     color: $nord0;
+
     &:hover {
       color: $nord10 !important;
     }
@@ -180,8 +188,9 @@ blockquote {
   margin-bottom: 3rem;
   text-align: center;
 
-  > a {
+  >a {
     color: $nord0;
+
     &:hover {
       color: $nord10 !important;
     }
@@ -204,10 +213,10 @@ hr {
   column-gap: 2rem;
   align-items: baseline;
   margin-bottom: 0.5rem;
-  
+
   @media only screen and (min-width: 640px) {
     flex-direction: row;
-	}
+  }
 }
 
 .post-title-block {
@@ -217,7 +226,7 @@ hr {
 
   @media only screen and (min-width: 640px) {
     margin-bottom: 0.5rem;
-	}
+  }
 }
 
 .post-title {
@@ -239,19 +248,22 @@ hr {
   font-size: 1.2em;
   margin-top: 4rem;
   margin-bottom: 2rem;
+
   h1 {
     margin-bottom: 0.25rem;
     line-height: normal;
     font-weight: 600;
   }
+
   .subtitle {
     font-size: 1.25rem;
     opacity: 0.6;
   }
+
   hr {
     margin-top: 0;
   }
-  
+
 }
 
 
@@ -262,10 +274,11 @@ hr {
 }
 
 // Links to title blocks
-a > .title-block,
-a > .post-title-block,
+a>.title-block,
+a>.post-title-block,
 .nav-bar a {
   color: $nord1;
+
   &:hover {
     color: $nord10 !important;
   }
@@ -294,7 +307,8 @@ table {
   border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
   border: 1px solid $nord4;
   padding: $spacing-small;
 }
@@ -325,15 +339,19 @@ li:has(input[type=checkbox]) {
   row-gap: 1rem;
   column-gap: 3rem;
   font: 1.5rem $font-family-heading;
+
   h1 {
     margin: 0;
   }
+
   text-align: center;
+
   @media only screen and (min-width: 640px) {
     min-height: 70vh;
     text-align: left;
-	}
+  }
 }
+
 .wrong-way-sign {
   font-size: 2rem;
   font-weight: 600;
@@ -364,10 +382,11 @@ li:has(input[type=checkbox]) {
   border-radius: 0 0 0.5rem 0.5rem;
 
   background-color: rgba($nord6, 0.75);
-  
+
   font-family: $font-family-heading;
 
-  p, h2 {
+  p,
+  h2 {
     margin: 0;
     padding: 0;
   }
@@ -425,4 +444,3 @@ img[src$="/assets/headshot.jpg"] {
 .currently-reading {
   font-weight: 600;
 }
-

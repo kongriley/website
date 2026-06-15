@@ -15,6 +15,7 @@ This is a list of works I find compelling, categorized by [BISAC](https://www.bi
   - 「吾輩は猫である」 *I Am a Cat*
 -  「コンビニ人間」 *Convenience Store Woman* by 村田沙耶香 Sayata Murata
 -  *The Handmaid's Tale* by Margaret Atwood
+- *Pachinko* by Min Jin Lee
 
 ## Philosophy
 - *Gödel, Escher, Bach* by Douglas Hofstadter
@@ -29,6 +30,7 @@ This is a list of works I find compelling, categorized by [BISAC](https://www.bi
 
 ## Self-Help
 - *Unreasonable Hospitality* by Will Guidara
+- *Grit* by Angela Duckworth
 - *Peak* by Anders Pool and Karl Ericsson
 - *Four Thousand Weeks* by Oliver Burkeman
 - *Meditations for Mortals* by Oliver Burkeman
