@@ -1,7 +1,5 @@
 +++
 title = "Timesharing"
-
-[extra]
 draft = true
 +++
 

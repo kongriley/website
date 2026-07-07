@@ -1,7 +1,5 @@
 +++
 title = "On Linguistics"
-
-[extra]
 draft = true
 +++
 

@@ -40,21 +40,21 @@ $font-family-mono: 'Overpass Mono', ui-monospace, "SF Mono", Menlo, monospace;
 
 @font-face {
   font-family: 'Inter';
-  src: url('/fonts/InterVariable.ttf') format('truetype');
+  src: url('/fonts/InterVariable.woff2') format('woff2');
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Overpass';
-  src: url('/fonts/Overpass-Variable.ttf') format('truetype');
+  src: url('/fonts/Overpass-Variable.woff2') format('woff2');
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Overpass Mono';
-  src: url('/fonts/OverpassMono-Variable.ttf') format('truetype');
+  src: url('/fonts/OverpassMono-Variable.woff2') format('woff2');
   font-style: normal;
   font-display: swap;
 }

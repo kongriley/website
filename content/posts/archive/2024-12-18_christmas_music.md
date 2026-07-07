@@ -1,7 +1,5 @@
 +++
 title = "Christmas music"
-
-[extra]
 draft = true
 +++
 

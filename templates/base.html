@@ -2,17 +2,22 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" type="image/svg+xml" href="/280.svg"/>
   <title>Riley Kong</title>
   
+  <link rel="preload" href="/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/Overpass-Variable.woff2" as="font" type="font/woff2" crossorigin>
+
   <link rel="stylesheet" href="/style.css">
-  
+
   <!-- Font loading script -->
   <script>
     if ("fonts" in document) {
       Promise.all([
-        document.fonts.load("1em Inter")
+        document.fonts.load("1em Inter"),
+        document.fonts.load("1em Overpass"),
+        document.fonts.load("1em 'Overpass Mono'")
       ]).then(() => {
         document.documentElement.classList.add("fonts-loaded");
       });

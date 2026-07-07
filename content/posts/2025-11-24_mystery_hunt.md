@@ -1,7 +1,5 @@
 +++
 title = "MIT Mystery Hunt 2025"
-
-[extra]
 draft = true
 +++
 

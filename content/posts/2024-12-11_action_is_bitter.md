@@ -1,7 +1,5 @@
 +++
 title = "Action is bitter"
-
-[extra]
 draft = true
 +++
 
